@@ -1,6 +1,6 @@
 myClockJS
 ========
 
-# JavaScript clock - myClockJS object with different indicators #
+### JavaScript clock - myClockJS object with different indicators ###
 
-See <a href="http://www.denisx.ru/myclockjs">myClockJS</a> examples at www.denisx.ru
+See <a href="http://www.denisx.ru/myclockjs">myClockJS</a> examples.
