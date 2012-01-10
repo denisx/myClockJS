@@ -1,0 +1,355 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+}
+
+p, li, ul, h1 {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.myClockJS {
+	padding: 5em 5em 5em 5em;
+}
+
+.myClockJS .indicator-container {
+	margin: 0 auto;
+	position: relative;
+	width: 351px;
+	height: 351px;
+	background-color: #f8f8ff;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-box-shadow: 10px 10px 20px gray;
+	-moz-box-shadow: 10px 10px 20px gray;
+	-ms-box-shadow: 10px 10px 20px gray;
+	-o-box-shadow: 10px 10px 20px gray;
+	box-shadow: 10px 10px 20px gray;
+}
+.myClockJS .indicator-clock-arrow {
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	/*background-color: gray;*/
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.myClockJS .inside {
+	position: absolute;
+	width: 100%;
+
+	-webkit-border-radius: 40% 40% 20% 20%;
+	-moz-border-radius: 40% 40% 20% 20%;
+	-ms-border-radius: 40% 40% 20% 20%;
+	-o-border-radius: 40% 40% 20% 20%;
+	border-radius: 40% 40% 20% 20%;
+
+	-webkit-box-shadow: 0 3px 5px #666;
+	-moz-box-shadow: 0 3px 5px #666;
+	-ms-box-shadow: 0 3px 5px #666;
+	-o-box-shadow: 0 3px 5px #666;
+	box-shadow: 0 3px 5px #666;
+}
+
+
+.myClockJS .arrow-hour {
+	width: 3%;
+	min-width: 1px;
+	margin-left: -1.4%;
+}
+.myClockJS .arrow-hour .inside {
+	height: 43%;
+	top: 20%;
+	background-color: green;
+}
+
+
+.myClockJS .arrow-minute {
+	width: 2%;
+	min-width: 1px;
+	margin-left: -0.9%;
+}
+.myClockJS .arrow-minute .inside {
+	height: 54%;
+	top: 10%;
+	background-color: blue;
+
+	-webkit-border-radius: 45% 45% 15% 15%;
+	-moz-border-radius: 45% 45% 15% 15%;
+	-ms-border-radius: 45% 45% 15% 15%;
+	-o-border-radius: 45% 45% 15% 15%;
+	border-radius: 45% 45% 15% 15%;
+
+	-webkit-box-shadow: 0 4px 5px #777;
+	-moz-box-shadow: 0 4px 5px #777;
+	-ms-box-shadow: 0 4px 5px #777;
+	-o-box-shadow: 0 4px 5px #777;
+	box-shadow: 0 4px 5px #777;
+}
+
+
+.myClockJS .arrow-second {
+	width: 1%;
+	min-width: 1px;
+	margin-left: -0.4%;
+}
+.myClockJS .arrow-second .inside {
+	height: 64%;
+	top: 1.5%;
+	background-color: black;
+
+	-webkit-border-radius: 50% 50% 10% 10%;
+	-moz-border-radius: 50% 50% 10% 10%;
+	-ms-border-radius: 50% 50% 10% 10%;
+	-o-border-radius: 50% 50% 10% 10%;
+	border-radius: 50% 50% 10% 10%;
+
+	-webkit-box-shadow: 0 5px 5px #888;
+	-moz-box-shadow: 0 5px 5px #888;
+	-ms-box-shadow: 0 5px 5px #888;
+	-o-box-shadow: 0 5px 5px #888;
+	box-shadow: 0 5px 5px #888;
+}
+
+
+.myClockJS .arrow-finish {
+	width: 4%;
+	min-width: 1px;
+	margin-left: -1.9%;
+}
+.myClockJS .arrow-finish .inside {
+	height: 4%;
+	top: 48%;
+	background-color: #cc0000;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+
+.myClockJS .container-segment .segment {
+	position: absolute;
+	width: 0.5%;
+	height: 100%;
+	min-width: 1px;
+	left: 50%;
+	margin-left: -0.25%;
+}
+
+.myClockJS .container-segment .hour {
+	width: 0.7%;
+}
+
+.myClockJS .container-segment .segment div {
+	width: 100%;
+	height: 2%;
+	background-color: #777;
+	position: absolute;
+}
+
+.myClockJS .container-segment .segment .top {
+	top: 0;
+
+	-webkit-border-radius: 0 0 50% 50%;
+	-moz-border-radius: 0 0 50% 50%;
+	-ms-border-radius: 0 0 50% 50%;
+	-o-border-radius: 0 0 50% 50%;
+	border-radius: 0 0 50% 50%;
+}
+
+.myClockJS .container-segment .segment .bottom {
+	bottom: 0;
+
+	-webkit-border-radius: 50% 50% 0 0;
+	-moz-border-radius: 50% 50% 0 0;
+	-ms-border-radius: 50% 50% 0 0;
+	-o-border-radius: 50% 50% 0 0;
+	border-radius: 50% 50% 0 0;
+}
+
+.myClockJS .container-segment .min div {
+	height: 3.5%;
+	background-color: #666;
+}
+
+.myClockJS .container-segment .hour div {
+	height: 7%;
+	background-color: #555;
+}
+
+.myClockJS .container-segment .hour .top {
+	margin-top: -1.5%;
+}
+
+.myClockJS .container-segment .hour .bottom {
+	margin-bottom: -1.5%;
+}
+
+
+.myClockJS .container-symbols .symbol {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	left: 50%;
+	min-width: 1px;
+	margin-left: -9.9%;
+	/*background-color: yellow;*/
+}
+
+.myClockJS .container-symbols .symbol div {
+	position: absolute;
+	/*height: 100%;*/
+	width: 100%;
+	top: 6%;
+	font-size: 300%;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+
+
+
+/* ******************************** */
+/* custom overload */
+
+.myClockJS.clock2 {
+	background-color: black;
+}
+.myClockJS.clock2 .indicator-container {
+	background-color: transparent;
+	border: 1px solid #666;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.myClockJS.clock2 .arrow-hour .inside
+{
+	background-color: #666;
+}
+.myClockJS.clock2 .arrow-minute .inside
+{
+	background-color: #999;
+}
+.myClockJS.clock2 .arrow-second .inside
+{
+	background-color: #bbb;
+}
+.myClockJS.clock2 .arrow-finish .inside
+{
+	background-color: #333;
+	border: 1px solid #000;
+}
+.myClockJS.clock2 .container-symbols .symbol div {
+	color: #555;
+}
+.myClockJS.clock2 .inside {
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+.myClockJS.clock3 .container-symbols .symbol div {
+	font-size: 250%;
+}
+.myClockJS.clock3 .arrow-hour .inside
+, .myClockJS.clock3 .arrow-minute .inside
+/*, .myClockJS.clock3 .arrow-second .inside*/
+{
+	border-radius: 0;
+}
+.myClockJS.clock3 .inside {
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.myClockJS.clock4 {
+	padding: 8em;
+}
+
+
+
+
+.myClockJS.clock4 .indicator-container {
+	width: 151px;
+	height: 151px;
+
+	-webkit-border-radius: 35%;
+	-moz-border-radius: 35%;
+	-ms-border-radius: 35%;
+	-o-border-radius: 35%;
+	border-radius: 35%;
+}
+
+.myClockJS.clock4 .container-symbols .symbol div {
+	font-size: 100%;
+}
+
+.myClockJS.clock4 .container-segment .hour .top {
+	margin-top: 0;
+	height: 5%;
+}
+
+.myClockJS.clock4 .container-segment .hour .bottom {
+	margin-bottom: 0;
+	height: 5%;
+}
+
+.myClockJS.clock4 .inside {
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.myClockJS.clock4 .container-segment .segment .top {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.myClockJS.clock4 .container-segment .segment .bottom {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+
+
+
+.myClockJS.clock1 {
+	margin-bottom: 10em;
+}
